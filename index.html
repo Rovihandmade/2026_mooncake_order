@@ -3,803 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【Rovi蘿薇手作烘培】2025 中秋禮盒 預購中</title>
+    <title>【Rovi蘿薇手作烘培】2026 金馬迎春限量禮盒</title>
     <!-- 引入 Font Awesome 圖示 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 引入圓體字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- CSS 樣式 (直接內嵌) -->
     <style>
-/* 基本重置 */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-body {
-    font-family: 'Noto Sans TC', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f5ee; /* 淺米色背景 */
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* 標題與段落 */
-h1, h2, h3 {
-    font-weight: 700;
-    color: #5a4b40; /* 深棕色 */
-}
-
-h1 {
-    font-size: 2.8em;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2.2em;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-.section {
-    padding: 80px 0;
-}
-
-.section-description {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 50px;
-    color: #666;
-    font-size: 1.1em;
-}
-
-/* 按鈕 */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    border: none;
-    font-size: 1em;
-}
-
-.primary-btn {
-    background-color: #e6b268; /* 暖金色 */
-    color: #fff;
-}
-
-.primary-btn:hover {
-    background-color: #d1a15f;
-}
-
-.secondary-btn {
-    background-color: #f0f0f0;
-    color: #5a4b40;
-    border: 1px solid #ccc;
-}
-
-.secondary-btn:hover {
-    background-color: #e0e0e0;
-}
-
-/* Header */
-header {
-    background-color: #fff;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #e6b268;
-}
-
-nav a {
-    margin-left: 30px;
-    color: #5a4b40;
-    text-decoration: none;
-    font-weight: 400;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #e6b268;
-}
-
-.cart-icon {
-    position: relative;
-    font-size: 1.5em;
-    color: #5a4b40;
-    cursor: pointer;
-}
-
-#cart-count {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background-color: #e6b268;
-    color: #fff;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 0.7em;
-    font-weight: 700;
-}
-
-/* Hero Section (No Image) */
-.hero-section {
-    background-color: #f0f0e0; /* 淺黃褐色或米色 */
-    color: #5a4b40;
-    text-align: center;
-    padding: 150px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px; /* 降低高度，不再是大圖背景 */
-}
-
-.hero-section.hero-no-image {
-    background: linear-gradient(to bottom, #fdfaf5, #f8f5ee); /* 漸層背景 */
-    color: #5a4b40;
-}
-
-.hero-text {
-    max-width: 800px;
-}
-
-.hero-text h1 {
-    color: #5a4b40;
-    font-size: 3em; /* 調整字體大小 */
-    line-height: 1.2;
-    text-shadow: none; /* 移除陰影 */
-}
-
-.hero-text p {
-    font-size: 1.2em; /* 調整字體大小 */
-    margin-bottom: 40px;
-    text-shadow: none; /* 移除陰影 */
-}
-
-/* About Section (Removed About Img specific style) */
-.about-section {
-    text-align: center;
-    background-color: #fdfaf5;
-}
-
-/* New Photo Gallery Section */
-.photo-gallery-section {
-    background-color: #fff;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.gallery-item {
-    background-color: #fdfaf5;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    height: 300px; /* 保持 gallery-item 的固定高度 */
-    display: flex; 
-    flex-direction: column; 
-    /* 【核心修改】將 justify-content 改為 center，讓所有內容（圖片和文字）在容器中垂直居中 */
-    justify-content: center; 
-    align-items: center; /* 讓內容水平居中 */
-    gap: 10px; /* 【新增】在圖片和文字之間增加一點間距 */
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto; /* 【修改】讓高度自動適應 */
-    max-height: 220px; /*【優化】調整最大高度，給下方文字更多空間，確保居中效果 */
-    object-fit: contain; /* 【修改】確保圖片完整顯示，不裁切，可能會有留白 */
-    display: block; 
-    margin: 0 auto; /* 【新增】水平居中 */
-    flex-shrink: 0; /* 【新增】防止圖片在 flex 容器中被壓縮 */
-}
-
-.gallery-item p {
-    padding: 0 15px 15px; /* 【優化】調整下方文字的內邊距，使其在卡片底部 */
-    font-size: 1.05em;
-    color: #5a4b40;
-    font-weight: 500;
-    margin: 0;
-}
-
-
-/* Products Section (Modified for no images) */
-.products-section {
-    background-color: #fff;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.product-card {
-    background-color: #fdfaf5; /* 淺色背景 */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    overflow: hidden;
-    text-align: center;
-    padding: 25px; /* 增加整體內邊距 */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* 均勻分佈內容 */    
-    min-height: 320px; /* 【新增】給產品卡片一個最小高度，讓所有卡片看起來更統一 */
-}
-
-.product-card h3 {
-    color: #e6b268;
-    margin-bottom: 15px; /* 增加間距 */
-    font-size: 1.8em; /* 放大品項名稱 */
-    line-height: 1.2;
-}
-
-.product-card .description {
-    font-size: 1em; /* 調整大小 */
-    color: #666;
-    height: auto; /* 不再限制固定高度，讓文字自然延伸 */
-    overflow: visible;
-    text-overflow: clip;
-    -webkit-line-clamp: unset; /* 取消行數限制 */
-    -webkit-box-orient: unset;
-    padding: 0; /* 移除多餘 padding */
-    margin-bottom: 20px; /* 增加間距 */
-}
-
-.product-card .price {
-    font-size: 1.5em; /* 放大價格 */
-    font-weight: 700;
-    color: #5a4b40;
-    margin-bottom: 20px; /* 增加間距 */
-    padding: 0;
-}
-
-.product-card .original-price {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 0.9em; /* 相對縮小原價 */
-    margin-right: 8px;
-}
-
-.product-card .special-price {
-    color: #e6b268; /* 【優化】讓特價更顯眼 */
-    font-size: 1.6em; /* 【優化】特價字體稍大 */
-    font-weight: 900; /* 【優化】特價字體更粗 */
-}
-
-/* 【新增】顧客好評區塊樣式 */
-.testimonials-section {
-    background-color: #fdfaf5;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.testimonial-card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    text-align: left;
-    position: relative;
-    font-style: italic;
-    color: #555;
-    min-height: 150px; /* 保證卡片高度 */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.testimonial-card::before {
-    content: "“";
-    font-size: 3em;
-    color: #e6b268;
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    line-height: 0.5;
-}
-.testimonial-card p {
-    font-size: 1.05em;
-    margin-top: 20px; /* 留出空間給引號 */
-}
-.testimonial-card .author {
-    font-weight: 700;
-    color: #5a4b40;
-    margin-top: 15px;
-    text-align: right;
-    font-style: normal;
-}
-
-/* 【新增】FAQ 區塊樣式 */
-.faq-section {
-    background-color: #f8f5ee;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.faq-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
-    text-align: left;
-}
-.faq-item h3 {
-    color: #5a4b40;
-    margin-bottom: 10px;
-}
-.faq-item p {
-    color: #555;
-    margin-bottom: 0;
-}
-
-
-.quantity-control {
-    margin-bottom: 20px; /* 增加間距 */
-}
-
-.add-to-cart-btn {
-    width: 100%; /* 確保按鈕寬度 */
-    margin-top: auto; /* 保持在底部 */
-}
-
-/* Cart Summary Section */
-.cart-summary-section {
-    background-color: #fdfaf5;
-    border-top: 1px solid #eee;
-    transition: all 0.5s ease-in-out;
-}
-
-.cart-summary-section.hidden {
-    display: none !important;
-    opacity: 0 !important;
-    transform: translateY(20px);
-}
-
-.cart-items {
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px dashed #eee;
-}
-
-.cart-item:last-child {
-    border-bottom: none;
-}
-
-.cart-item-info {
-    flex-grow: 1;
-}
-
-.cart-item-info h4 {
-    margin-bottom: 5px;
-    color: #5a4b40;
-}
-
-.cart-item-info span {
-    color: #888;
-    font-size: 0.9em;
-}
-
-.cart-item-controls {
-    display: flex;
-    align-items: center;
-}
-
-.cart-item-controls .quantity-control {
-    margin: 0 15px;
-}
-
-.cart-item-controls .item-subtotal {
-    font-weight: 700;
-    color: #e6b268;
-    width: 80px;
-    text-align: right;
-}
-
-.cart-item-controls .remove-btn {
-    background-color: transparent;
-    border: none;
-    color: #f44336;
-    cursor: pointer;
-    font-size: 1.2em;
-    margin-left: 15px;
-}
-
-.cart-item-controls .remove-btn:hover {
-    color: #d32f2f;
-}
-
-.cart-total {
-    font-size: 1.5em;
-    font-weight: 700;
-    text-align: right;
-    margin-top: 20px;
-    color: #5a4b40;
-}
-
-.cart-total #cart-total-amount {
-    color: #e6b268;
-}
-
-#proceed-to-form-btn, #clear-cart-btn {
-    margin-top: 20px;
-    width: 100%;
-}
-#clear-cart-btn {
-    margin-top: 10px;
-}
-
-/* Order Info Section */
-.order-info-section {
-    background-color: #fff;
-    text-align: center;
-}
-
-.info-blocks {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.info-block {
-    background-color: #fdfaf5;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    text-align: left;
-}
-
-.info-block h3 {
-    color: #e6b268;
-    border-bottom: 2px solid #e6b268;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.info-block ul {
-    list-style: none;
-}
-
-.info-block li {
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.info-block li i {
-    margin-right: 10px;
-    color: #e6b268;
-}
-
-.important-note {
-    margin-top: 40px;
-    font-size: 1.1em;
-    color: #e6b268;
-}
-
-/* Contact Section */
-.contact-section {
-    background-color: #f8f5ee;
-    text-align: center;
-}
-
-.contact-section ul {
-    margin-top: 30px;
-}
-
-.contact-section li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #555;
-}
-
-.contact-section li i {
-    margin-right: 10px;
-    color: #e6b268;
-}
-
-.social-links {
-    margin-top: 30px;
-}
-
-.social-links a {
-    font-size: 2em;
-    color: #5a4b40;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #e6b268;
-}
-
-/* Footer */
-footer {
-    background-color: #5a4b40;
-    color: #eee;
-    padding: 30px 0;
-    text-align: center;
-    font-size: 0.9em;
-}
-
-footer a {
-    color: #e6b268;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-    }
-    nav {
-        margin-top: 15px;
-    }
-    nav a {
-        margin: 0 10px;
-    }
-    .hero-text h1 {
-        font-size: 2.5em;
-    }
-    .hero-text p {
-        font-size: 1.1em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-    .info-blocks {
-        grid-template-columns: 1fr;
-    }
-    .gallery-grid { 
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 1.5em;
-    }
-    nav {
-        display: none; 
-    }
-    .hero-text h1 {
-        font-size: 2em;
-    }
-    .hero-text p {
-        font-size: 1em;
-    }
-    .section {
-        padding: 50px 0;
-    }
-    .product-card .add-to-cart-btn {
-        width: calc(100% - 30px);
-    }
-}
-
-.hidden {
-    display: none !important;
-    opacity: 0 !important;
-}
-
-/* 新增產品卡片圖片容器樣式 */
-.product-image-container {
-    width: 100%;
-    height: 180px; /* 固定圖片容器高度 */
-    overflow: hidden;
-    margin-bottom: 15px; /* 與下方文字內容間隔 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f8f8; /* 圖片載入前的背景色 */
-}
-
-.product-image-container img {
-    width: 100%;
-    height: 100%; /* 讓圖片填滿容器 */
-    object-fit: contain; /* 確保圖片完整顯示，不裁切，可能會有留白 */
-    display: block;
-}
-
-/* 新增產品卡片無圖片佔位符樣式 */
-.product-image-placeholder {
-    width: 100%;
-    height: 180px; /* 與圖片容器高度相同 */
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #888;
-    font-size: 0.9em;
-    padding: 15px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    border: 1px dashed #ccc;
-}
-.product-image-placeholder h3 {
-    color: #5a4b40;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-.product-image-placeholder p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-/* 包裹產品文字內容的 div */
-.product-card .product-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1; /* 讓內容佔滿剩餘空間 */
-    padding: 0 15px 15px; /* 調整內邊距 */
-}
-.product-card h3,
-.product-card .description,
-.product-card .price {
-    padding: 0; /* 移除 product-card 內部的 padding */
-    margin-left: 0;
-    margin-right: 0;
-}
-.product-card {
-    padding: 0; /* 移除最外層 product-card 的 padding，改為由 product-content 控制 */
-}
-
-/* 新增：已額滿日期顯示區塊樣式 */
-.sold-out-dates-container {
-    background-color: #fff9f9; /* 淺紅色背景，提醒作用 */
-    border: 1px solid #ffcccc; /* 淺紅色邊框 */
-    border-radius: 8px;
-    padding: 25px;
-    margin: 30px auto;
-    max-width: 600px; /* 限制寬度，使其更像一個提示框 */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    text-align: left;
-}
-
-.sold-out-dates-title {
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #e65353; /* 紅色，強調「額滿」 */
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.sold-out-dates-list {
-    list-style: none; /* 移除列表點 */
-    padding: 0;
-    margin: 0 0 15px 0;
-    display: flex; /* 讓日期橫向排列 */
-    flex-wrap: wrap; /* 超出寬度自動換行 */
-    gap: 10px; /* 日期之間的間距 */
-    justify-content: center; /* 橫向居中 */
-}
-
-.sold-out-dates-list li {
-    background-color: #ffdddd; /* 更深的紅色背景，突出每個日期 */
-    color: #a00; /* 深紅色文字 */
-    font-weight: 700;
-    padding: 8px 15px;
-    border-radius: 5px;
-    white-space: nowrap; /* 防止日期換行 */
-    font-size: 1.1em;
-}
-
-.sold-out-dates-cta {
-    font-size: 1em;
-    color: #666;
-    margin-top: 15px;
-    text-align: center;
-    line-height: 1.5;
-}
-
-/* 在小螢幕上調整 */
-@media (max-width: 480px) {
-    .sold-out-dates-container {
-        padding: 15px;
-    }
-    .sold-out-dates-title {
-        font-size: 1.2em;
-    }
-    .sold-out-dates-list li {
-        font-size: 1em;
-        padding: 6px 10px;
-    }
-}
-
-
-/* 新增產品成分樣式 */
-.product-card .ingredients {
-    font-size: 0.9em;
-    color: #777;
-    margin-top: -10px; /* 稍微向上調整，與描述靠近 */
-    margin-bottom: 15px; /* 與價格間隔 */
-    padding: 0;
-    line-height: 1.4;
-}
+        /* ====== 2026 新春配色設定 ====== */
+        :root {
+            --bg-color: #FFF8F5; /* 淺粉膚色背景 */
+            --text-color: #5D4037; /* 深褐色文字 */
+            --primary-red: #C0392B; /* 喜氣紅 */
+            --primary-gold: #D4AC0D; /* 富貴金 */
+            --card-bg: #FFFFFF;
+        }
+
+        /* 基本重置 */
+        body, h1, h2, h3, p, ul, li { margin: 0; padding: 0; list-style: none; }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            background-image: radial-gradient(#E6B0AA 1.5px, transparent 1.5px);
+            background-size: 25px 25px;
+        }
+
+        /* 寬度設定 */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+
+        /* 字體與標題 */
+        h1, h2, h3 {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            font-weight: 700;
+            color: var(--primary-red);
+        }
+
+        h1 { font-size: 2.5em; margin-bottom: 20px; }
+        h2 { 
+            font-size: 2em; margin-bottom: 40px; text-align: center; 
+            position: relative; padding-bottom: 15px;
+        }
+        h2::after {
+            content: ''; display: block; width: 60px; height: 3px;
+            background-color: var(--primary-gold); margin: 10px auto 0;
+        }
+
+        h3 { font-size: 1.4em; margin-bottom: 10px; }
+        p { margin-bottom: 15px; }
+        .section { padding: 60px 0; }
+        .section-description { text-align: center; max-width: 700px; margin: 0 auto 50px; color: #666; font-size: 1.1em; }
+
+        /* 按鈕 */
+        .btn {
+            display: inline-block; padding: 12px 25px; border-radius: 5px;
+            text-decoration: none; font-weight: 700; transition: 0.3s;
+            cursor: pointer; border: none; font-size: 1em; width: 100%;
+        }
+        .primary-btn { background-color: var(--primary-red); color: #fff; }
+        .primary-btn:hover { background-color: #A93226; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .secondary-btn { background-color: #fff; color: var(--text-color); border: 1px solid #ccc; }
+        .secondary-btn:hover { background-color: #eee; }
+
+        /* Header */
+        header {
+            background-color: rgba(255,255,255,0.95); padding: 15px 0;
+            box-shadow: 0 4px 10px rgba(192, 57, 43, 0.1);
+            position: sticky; top: 0; z-index: 1000;
+            border-bottom: 3px solid var(--primary-red);
+        }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5em; font-weight: 700; color: var(--primary-red); }
         
+        nav a { margin-left: 20px; color: var(--text-color); text-decoration: none; transition: 0.3s; }
+        nav a:hover { color: var(--primary-red); font-weight: bold; }
+
+        .cart-icon { position: relative; font-size: 1.5em; color: var(--primary-red); cursor: pointer; }
+        #cart-count {
+            position: absolute; top: -8px; right: -10px;
+            background-color: var(--primary-gold); color: #fff;
+            border-radius: 50%; padding: 2px 6px; font-size: 0.7em; font-weight: 700;
+        }
+
+        /* Hero */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-red), #922B21);
+            color: #fff; text-align: center; padding: 100px 20px;
+            border-bottom: 5px solid var(--primary-gold);
+        }
+        .hero-text h1 { color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero-text p { font-size: 1.2em; color: #F9E79F; margin-bottom: 30px; }
+
+        /* Products Grid 設定 */
+        .product-grid { 
+            display: grid; 
+            gap: 20px; 
+            grid-template-columns: 1fr;
+        }
+
+        /* 平板版 2 欄 */
+        @media (min-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* 電腦版 (寬度大於 1024px) 強制 4 欄 */
+        @media (min-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .product-card {
+            background-color: var(--card-bg); border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(192, 57, 43, 0.08);
+            overflow: hidden; padding: 0; display: flex; flex-direction: column;
+            border: 1px solid #eee; transition: 0.3s; position: relative;
+        }
+        .product-card:hover { transform: translateY(-5px); border-color: var(--primary-gold); }
+
+        /* 庫存標籤 */
+        .stock-badge {
+            position: absolute; top: 10px; left: 10px;
+            background-color: rgba(192, 57, 43, 0.9); color: #fff;
+            padding: 5px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 10;
+        }
+
+        .product-image-container {
+            width: 100%; height: 250px; 
+            background-color: #f8f8f8;
+            display: flex; justify-content: center; align-items: center; overflow: hidden;
+        }
+        .product-image-container img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .product-image-placeholder {
+            width: 100%; height: 250px; background-color: #F2D7D5;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: var(--primary-red); text-align: center; padding: 10px;
+        }
+
+        .product-content { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; }
+        .product-card h3 { margin-bottom: 10px; color: var(--primary-red); border-left: 4px solid var(--primary-gold); padding-left: 10px; font-size: 1.2em; }
+        .product-card .description { font-size: 0.9em; color: #666; margin-bottom: 10px; }
+        .ingredients { font-size: 0.8em; color: #999; margin-bottom: 10px; }
+
+        /* 單一產品的價格與控制 */
+        .single-product-footer { margin-top: auto; }
+        .price-area { margin-bottom: 10px; }
+        .original-price { text-decoration: line-through; color: #999; font-size: 0.85em; margin-right: 5px; }
+        .special-price { color: var(--primary-red); font-size: 1.3em; font-weight: 900; }
+
+        /* 組合產品(Group)樣式 - 修正價格顯示 */
+        .variant-item {
+            border-top: 1px dashed #ddd;
+            padding: 12px 0; /* 稍微增加間距 */
+        }
+        .variant-item:first-of-type { border-top: 1px solid #eee; margin-top: 10px; }
+        
+        .variant-info { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 8px; 
+            flex-wrap: wrap; /* 讓手機版價格太長時可以換行 */
+        }
+        .variant-name { font-weight: 700; color: #5D4037; font-size: 0.95em; }
+        
+        /* 組合產品的價格區塊 */
+        .variant-price-group {
+            text-align: right;
+        }
+        .variant-original-price {
+            text-decoration: line-through; color: #999; font-size: 0.8em; margin-right: 3px;
+        }
+        .variant-special-price {
+            color: var(--primary-red); font-weight: bold; font-size: 1.1em;
+        }
+
+        /* 數量控制 */
+        .quantity-control { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        .qty-btn-group { display: flex; align-items: center; }
+        .quantity-control button {
+            width: 28px; height: 28px; border-radius: 50%; border: 1px solid #ccc;
+            background: #fff; cursor: pointer; font-weight: bold; color: #555;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .quantity-control input {
+            width: 35px; text-align: center; border: none; font-size: 1em; margin: 0 2px;
+            background: transparent; color: #333;
+        }
+        .add-to-cart-btn { padding: 8px 0; font-size: 0.9em; }
+
+        /* Order Info */
+        .sold-out-dates-container {
+            background-color: #fff; border: 2px dashed var(--primary-red);
+            border-radius: 10px; padding: 25px; margin: 30px auto; max-width: 600px;
+            text-align: center;
+        }
+        .sold-out-dates-list { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 15px 0; }
+        .sold-out-dates-list li { background-color: var(--primary-red); color: #fff; padding: 5px 15px; border-radius: 50px; }
+
+        /* Cart Summary (底部浮動) */
+        .cart-summary-section {
+            background-color: #fff; border-top: 2px solid var(--primary-gold);
+            position: fixed; bottom: 0; left: 0; right: 0; z-index: 2000;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1); padding: 20px;
+            transform: translateY(110%); transition: transform 0.3s ease-in-out;
+        }
+        .cart-summary-section.active { transform: translateY(0); }
+        .cart-items { max-height: 200px; overflow-y: auto; border: 1px solid #eee; padding: 10px; margin-bottom: 10px; }
+        .cart-item { display: flex; justify-content: space-between; border-bottom: 1px dashed #ddd; padding: 8px 0; }
+        .cart-total { text-align: right; font-size: 1.3em; font-weight: bold; color: var(--primary-red); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-text h1 { font-size: 2em; }
+            .product-image-container, .product-image-placeholder { height: 220px; }
+        }
     </style>
 </head>
 <body>
 
     <header>
         <div class="container header-content">
-            <div class="logo">Rovi蘿薇手作烘焙</div>
-            <nav>
+            <div class="logo"><i class="fas fa-gift"></i> Rovi蘿薇手作烘焙 2026新春禮盒</div>
+            <nav class="nav-links">
                 <a href="#about">關於我們</a>
-                <a href="#photo-gallery">禮盒款式</a>
                 <a href="#order-info">預購須知</a>
-                <a href="#products">品項介紹</a>
-                <a href="#FAQ area">常見問題</a>
+                <a href="#products">限量禮盒</a>
                 <a href="#contact">聯絡我們</a>
             </nav>
             <div class="cart-icon">
@@ -810,615 +246,403 @@ footer a:hover {
     </header>
 
     <main>
-        <section id="hero" class="hero-section hero-no-image"> 
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section"> 
             <div class="hero-text">
-                <h1>月圓人團圓，暖心手作中秋獻禮</h1>
-                <p>嚴選食材，匠心烘焙。預購優惠中，為您與摯愛獻上最真摯的祝福。</p>
-                <a href="#products" class="btn primary-btn">立即選購</a>
+                <h1>2026 金馬迎春・新春獻禮</h1>
+                <p>嚴選食材，匠心烘焙。限量禮盒預購中，為您傳遞最真摯的祝福。</p>
+                <a href="#products" class="btn primary-btn" style="background:#fff; color:#C0392B; width: auto;">立即選購</a>
             </div>
         </section>
 
-        <section id="about" class="section about-section container">
-            <h2>手作的溫度，家的心意</h2>
-            <p>Rovi蘿薇手作烘焙堅持手工製作每一份點心，嚴選食材，將對烘焙的熱情與對家人的心意揉入其中，希望將這份家的溫暖傳遞給每個人。</p>
-            <p>我們相信，每一份甜點都承載著故事與情感，特別在這個中秋佳節，更是凝聚思念的媒介。</p>
-            <p>每一顆蛋黃酥都傾注了匠人般的堅持，每日現敲新鮮紅土鹹鴨蛋，取出渾圓飽滿的鹹蛋黃後，細心烘烤至金黃噴香，</p>
-            <p>再將其完美包覆進層次分明的酥皮與綿密豆沙內。</p>
-            <p>利用當日現榨的火龍果汁去點綴綠豆椪層層酥鬆餅皮，這些堅持皆是為了讓您每一口都能品嚐到最純粹、最令人感動的極致美味與安心。</p>
-            <p>Rovi蘿薇，以手心的溫度，烘焙滿月的祝福，透過暖心的手作禮盒，為您與摯愛傳遞一份最純粹的祝福與感動。</p>
-        </section>
-
-
-        <!-- 相片集區塊 -->
-        <section id="photo-gallery" class="section photo-gallery-section container">
-            <h2>2025年禮盒款式</h2>
-            <p>主打4款手提禮盒，數量有限，將依照預購順位出貨（不挑款、隨機款式出貨）</p>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/pTp0k0Sh/image.jpg" alt="手提禮盒款式1"> <!-- 請替換 -->
-                    <p>手提禮盒款式1</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/KjT0h1xm/image.jpg" alt="手提禮盒款式2"> <!-- 請替換 -->
-                    <p>手提禮盒款式2</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/05KWwBmh/V1.png" alt="手提禮盒款式3"> <!-- 請替換 -->
-                    <p>手提禮盒款式3</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/nzg3W48d/image.jpgg" alt="手提禮盒款式4"> <!-- 請替換 -->
-                    <p>手提禮盒款式4</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/MTx1gKV7/image.jpg" alt=" "> <!-- 請替換 -->
-                <p>產品展示1</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/sxg7D6n1/image.jpg" alt=" "> <!-- 請替換 -->
-                <p>產品展示2</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/htkLb0G3/image.jpg" alt=" "> <!-- 請替換 -->
-                <p>產品展示3</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/tJvP13fk/image.jpg" alt=" "> <!-- 請替換 -->
-                <p>產品展示4</p>
-                </div>
-            </div>
-            <a href="#products" class="btn primary-btn" style="margin-top: 40px;">前往選購中秋禮盒</a> <!-- 【新增】CTA -->
-        </section>
-
-        <section id="order-info" class="section order-info-section container">
-            <h2>中秋預購須知</h2>
-            <p class="note">
-                手工製作數量有限，為確保品質，<br>
-                提醒您，以下日期**已額滿無法訂購**，請避免選擇：
-            </p> 
-            <!-- 【新增】已額滿日期顯示區塊 -->
-            <div class="sold-out-dates-container">
-                <p class="sold-out-dates-title">❌ 已額滿日期：</p>
-                <ul class="sold-out-dates-list">
-                    <li>2025/9/11(四) </li>
-                    <li>2025/9/20(六) </li>
-                    <li>2025/9/21(日) </li>
-                    <li>2025/9/22(一) </li>
-                    <li>2025/9/23(二) </li>
-                    <li>2025/9/24(三) </li>
-                    <li>2025/9/25(四) </li>
-                    <li>2025/9/26(五) </li>
-                    <li>2025/9/27(六) </li>
-                    <li>2025/9/28(日) </li>
-                    <li>2025/9/29(一) </li>
-                    <li>2025/9/30(二) </li>
-                    <li>2025/10/1(一) </li>
-                    <li>2025/10/2(四) </li>
-                    <!-- 您需要手動更新這裡，添加已額滿的日期 -->
-                    <!-- 例如：<li>9/10 (三) - 額滿</li> -->
-                </ul>
-                <p class="sold-out-dates-cta">
-                    其他日期額度有限，請務必確認購物車數量後點擊下方按鈕進入 Google 表單，
-                    並參考「面交/寄出日期」問題旁的【每日額度說明】，以便選擇日期。
-                </p>
-            </div>
-
-            <div class="info-blocks">
-                <div class="info-block">
-                    <h3>預購期間</h3>
-                    <p>即日起至 2025/09/21 星期日 止。</p>
-                    <p>手工限量製作，敬請提早預購。</p>
-                    <p>請注意：預購截止日後，價格即恢復原價。</p>
-                </div>
-                <div class="info-block">
-                    <h3>付款方式</h3>
-                    <ul>
-                        <li>轉帳匯款：匯款帳號將於訂單確認信中提供。</li>
-                        <li>LINE PAY轉帳：須加LINE好友。</li>
-                        <li>請於收到訂單確認信後24小時內完成匯款，謝謝</li>
-
+        <!-- 預購須知 -->
+        <section id="order-info" class="section" style="background-color: #F9EBEA;">
+            <div class="container">
+                <h2>新春預購須知</h2>
+                <div class="sold-out-dates-container">
+                    <p class="sold-out-dates-title"><i class="fas fa-exclamation-circle"></i> 訂單額滿日期</p>
+                    <ul class="sold-out-dates-list">
+                        <li>2026/01/20 (二)</li>
+                        <li>2026/01/21 (三)</li>
                     </ul>
+                    <p style="font-size:0.9em; color:#666;">其他日期名額有限，請盡早下單。實際出貨日請以購物車結帳表單為準。</p>
                 </div>
-                <div class="info-block">
-                    <h3>取貨/配送說明</h3>
-                    <ul>
-                        <li>面交：請於預訂時選擇面交日期、時間與地點。</li>
-                        <li>宅配：請於預訂時選擇物流業者(7-11/郵局)、寄件日期，將配合於該日期出貨。</li>
-                        <li>常溫宅配運費：將依實際材積及物流業者訂價收取。</li>
-                    </ul>
+                <div style="text-align:center; max-width:800px; margin:0 auto;">
+                    <p><strong>預購期間：</strong>即日起至 2026/01/15 止。</p>
+                    <p><strong>取貨方式：</strong>宅配 / 7-11店到店 / 工作室自取。</p>
+                    <p><strong>付款方式：</strong>轉帳匯款 / LINE PAY。</p>
                 </div>
             </div>
-            <p class="important-note"><strong>重要提醒：</strong> 您的訂單將在收到款項後正式成立，並依您選擇的日期出貨。</p>
         </section>
 
-        <section id="products" class="section products-section container">
-            <h2>Rovi蘿薇手作烘焙 2025 中秋禮盒系列</h2>
-            <p class="section-description">品味經典，探索新意。多款中秋限定手作烘焙，滿足您對佳節美味的所有期待。</p>
-
+        <!-- 產品列表 -->
+        <section id="products" class="section container">
+            <h2>新春限量禮盒</h2>
+            <p class="section-description">主打4款精美禮盒，數量有限，售完為止。</p>
             <div class="product-grid" id="product-list">
-                <!-- 產品將由 JavaScript 動態生成 -->
+                <!-- JS 動態生成 -->
+            </div>
+        </section>
+        
+        <!-- 常見問題 -->
+        <section id="faq" class="section container">
+            <h2>常見問題</h2>
+            <div style="background:#fff; padding:30px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+                <h3>Q: 禮盒的保存期限？</h3>
+                <p>A:
+                <p>1.鳳梨酥系列、蛋黃酥系列及餅乾系列常溫保存2週（請放置陰涼處），冷藏可保存4週，食用前建議回烤，風味更佳。</p>
+                <p>2.腰果系列常溫保存3週（請放置陰涼處）。</p>
+                <p>3.開封後請盡快食用完畢。</p>
+
+
+                <hr style="margin:20px 0; border:0; border-top:1px dashed #ddd;">
+                <h3>Q: 訂單何時確認？</h3>
+                <p>A: 填單後我們會盡速與您聯絡確認訂單內容，請留意 Email 或 Line 訊息。</p>
             </div>
         </section>
 
-        <section id="cart-summary-section" class="section cart-summary-section container hidden">
-            <h2>您的訂單明細</h2>
+        <!-- 聯絡我們 -->
+        <section id="contact" class="section container" style="text-align:center;">
+            <h2>與我們聯繫</h2>
+            <p>若有任何疑問，歡迎私訊粉絲專頁</p>
+            <div style="font-size:2.5em; margin-top:20px;">
+                <a href="https://line.me/ti/p/VN8SFJACt2" target="_blank" style="color:#06C755; margin:0 15px;"><i class="fab fa-line"></i></a>
+                <a href="https://www.instagram.com/rovihandmade" target="_blank" style="color:#E1306C; margin:0 15px;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1EtxRn7jGt/?mibextid=wwXIfr" target="_blank" style="color:#1877F2; margin:0 15px;"><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 購物車 (浮動視窗) -->
+    <div id="cart-summary-section" class="cart-summary-section">
+        <div class="container">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                <h3 style="margin:0;"><i class="fas fa-shopping-cart"></i> 您的訂單</h3>
+                <button id="close-cart-btn" style="background:none; border:none; font-size:1.5em; cursor:pointer;"><i class="fas fa-times"></i></button>
+            </div>
             <div class="cart-items" id="cart-items-display">
                 <p>購物車是空的。</p>
             </div>
             <div class="cart-total">
                 總計：<span id="cart-total-amount">$0</span>
             </div>
-            <button id="proceed-to-form-btn" class="btn primary-btn">確認訂單，前往Google表單填寫資訊</button>
-            <button id="clear-cart-btn" class="btn secondary-btn">清空購物車</button>
-        </section>
-
-
-<!-- 【新增】FAQ 區塊 -->
-        <section id="FAQ area" class="section faq-section container">
-            <h2>常見問題</h2>
-            <div class="faq-item">
-                <h3>Q: 禮盒的保存期限和保存方式？</h3>
-                <p>A:</p>
-                <p> 中秋禮盒皆為手工製作，無添加防腐劑。</p>
-                <p> 常溫保存：一般室溫下可保存約 2週。但因中秋節前後氣溫偏高，建議於7天內食用完畢，以保持新鮮與最佳風味。</p>
-                <p> 冷藏／冷凍保存：可延長保存至 4週。食用前建議使用 烤箱或微波稍微加熱回烤，可恢復外皮酥脆口感，風味更佳。</p>
-            </div>
-            <div class="faq-item">
-                <h3>Q: 如何知道我的訂單是否成立？</h3>
-                <p>A:</p>
-                <p> 提交訂單後，我們將於24小時內發送訂單確認信至您的Email或LINE，內含詳細訂購內容及匯款資訊。請於期限內完成匯款，逾期將自動取消訂單，謝謝。</p>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section container">
-            <h2>與我們聯繫</h2>
-            <p>若有任何疑問或特殊需求，歡迎隨時與我們聯繫！</p>
-            <ul>
-                <li><i class="fas fa-envelope"></i> Email：rovihandmade@gmail.com</li>
-                <li><i class="fas fa-clock"></i> 營業時間：每日9:00AM-20:00PM</li>
-            </ul>
-            <div class="social-links">
-                <a href="https://www.facebook.com/share/1Fjos2Lw4h/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/rovihandmade?igsh=Nm1najZxd3Q3c3hn" target="_blank"><i class="fab fa-instagram-square"></i></a>
-            </div>
-        </section>
-    </main>
+            <button id="proceed-to-form-btn" class="btn primary-btn" style="margin-top:15px;">確認訂單，前往填寫資訊</button>
+            <button id="clear-cart-btn" class="btn secondary-btn" style="margin-top:10px; border:none; color:#999;">清空購物車</button>
+        </div>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Rovi蘿薇手作烘培。保留所有權利。</p>
-            <p><a href="#">隱私權政策</a> | <a href="#">服務條款</a></p>
+        <div class="container" style="text-align:center; padding:30px 0; background-color:#5D4037; color:#fff; margin-top:50px;">
+            <p>&copy; 2026 Rovi蘿薇手作烘培。保留所有權利。</p>
         </div>
     </footer>
 
-    <!-- JavaScript 程式碼 (直接內嵌，已修正所有問題) -->
+    <!-- JavaScript 邏輯 -->
     <script>
-// 將 GOOGLE_FORM_ID 和 PRODUCT_QUANTITY_ENTRY_IDS 直接在這裡定義 (硬編碼)
-const GOOGLE_FORM_ID = '1FAIpQLSeEyB2hoKkuFdFzjPW34Z4X57UB1yXg5fjashv5bCn96gfeAA'; // 您的 Google 表單 ID
-const PRODUCT_QUANTITY_ENTRY_IDS = { // 您的品項數量欄位 ID
-    'uodousha': '531001400',
-    'greendousha': '2026671317',
-    'mixed_egg_yolk': '1127966981',
-    'pure_mung_bean': '2072600674',
-    'floss_mung_bean': '179437994',
-    'mixed_mung_bean': '1204106198',
-    'mixed_all': '600143959' // 已修正為正確的 ID
-};
+        // ====== 設定區：請填入您的 Google 表單資訊 ======
+        const GOOGLE_FORM_ID = '1FAIpQLSeEyB2hoKkuFdFzjPW34Z4X57UB1yXg5fjashv5bCn96gfeAA'; // 您的表單 ID
+        
+        // 表單欄位對應 ID (請依照您的新春表單修改)
+        const PRODUCT_QUANTITY_ENTRY_IDS = {
+            'mix_9grid': '111111111',     // 9宮格 ID
+            'butter_cookie': '222222222', // 奶油酥餅 ID
+            'pineapple_classic': '123456789', // 經典鳳梨酥 ID
+            'pineapple_native': '987654321',  // 土鳳梨酥 ID
+            'cashew_box': '333333333'     // 腰果 ID
+        };
 
-// 產品資料 (請根據您的實際品項和價格修改)
-const products = [
-    {
-        id: 'uodousha',
-        name: '烏豆沙蛋黃酥',
-        originalPrice: 390,
-        specialPrice: 390,
-        description: '綿密醇厚的烏豆沙，完美包覆油潤鹹香的金黃鹹蛋黃，甜鹹交織的經典滋味。',
-        image: 'https://i.postimg.cc/wTP4Jktf/v1.png', // 【新增/修改】請替換為 Imgur/Postimages 直接連結
-        ingredients: '烏豆沙、蛋黃、麵粉、安佳無水奶油、鮮奶油、糖、黑芝麻 (每顆淨重 65g ± 3g)', // 【新增】主要成分
-        unit: '盒'
-    },
-    {
-        id: 'greendousha',
-        name: '綠豆沙蛋黃酥',
-        originalPrice: 390,
-        specialPrice: 390, 
-        description: '細緻清甜的綠豆沙，搭配飽滿鹹蛋黃，口感清新不膩，蛋黃酥愛好者的雅致之選，經典熱銷！',
-        image: 'https://i.postimg.cc/rpGfBXf3/v2.png', // 【新增/修改】請替換
-        ingredients: '綠豆沙、蛋黃、麵粉、安佳無水奶油、鮮奶油、糖、白芝麻 (每顆淨重 65g ± 3g)', // 【新增】主要成分
-        unit: '盒'
-    },
-    {
-        id: 'mixed_egg_yolk',
-        name: '綜合蛋黃酥',
-        originalPrice: 390,
-        specialPrice: 390,
-        description: '烏豆沙、綠豆沙各3入，一次品嚐兩種風味，滿足不同喜好，是雙重美味的絕佳選擇。',
-        image: 'https://i.postimg.cc/kGY1TQT5/image.jpg', // 【新增/修改】即使是綜合，也放一張代表性圖片
-        ingredients: '烏豆沙/綠豆沙、蛋黃、麵粉、安佳無水奶油、鮮奶油、糖、黑芝麻/白芝麻 (每顆淨重 65g ± 3g)', // 【新增】主要成分
-        unit: '盒'
-    },
-    {
-        id: 'pure_mung_bean',
-        name: '純綠豆椪',
-        originalPrice: 360,
-        specialPrice: 360,
-        description: '懷舊古早味，層層酥鬆餅皮，綠豆沙入口即化，選擇減糖配方，甜而不膩。',
-        image: 'https://i.postimg.cc/CKpvrLsb/v5.png', // 【新增/修改】請替換
-        ingredients: '綠豆沙、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', // 【新增】主要成分
-        unit: '盒'
-    },
-    {
-        id: 'floss_mung_bean',
-        name: '肉鬆綠豆椪',
-        originalPrice: 390,
-        specialPrice: 390,
-        description: '獨特鹹香，香酥肉鬆與細緻綠豆沙的巧妙結合，鹹甜交織，口感豐富令人回味。',
-        image: 'https://i.postimg.cc/NM4PHqTm/image.png', // 【新增/修改】請替換
-        ingredients: '綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', // 【新增】主要成分
-        unit: '盒'
-    },
-    {
-        id: 'mixed_mung_bean',
-        name: '綜合綠豆椪',
-        originalPrice: 375,
-        specialPrice: 375,
-        description: '純綠豆、肉鬆各3入，一次擁有兩種經典綠豆椪風味。',
-        image: 'https://i.postimg.cc/4NnFm03H/image.jpg', // 【新增/修改】
-
-        ingredients: '綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', // 【新增】主要成分
-        unit: '盒'
-    },
-    {
-        id: 'mixed_all',
-        name: '綜合蛋黃酥+肉鬆綠豆椪',
-        originalPrice: 390,
-        specialPrice: 390,
-        description: '圓滿推薦！精選烏豆沙蛋黃酥、綠豆沙蛋黃酥及肉鬆綠豆椪各2入，一次滿足您的所有渴望。',
-        image: 'https://i.postimg.cc/XqY1KHch/image.jpg', // 【新增/修改】
-        ingredients: '烏豆沙、綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、黑芝麻、白芝麻、新鮮火龍果汁 (淨重 65g ± 3g)', // 【新增】主要成分
-        unit: '盒'
-    }
-];
-
-// 購物車
-let cart = [];
-
-// DOM 元素 (先用 let 宣告，在 DOMContentLoaded 後賦值)
-let productList;
-let cartCountSpan;
-let cartSummarySection;
-let cartItemsDisplay;
-let cartTotalAmountSpan;
-let proceedToFormBtn;
-let clearCartBtn;
-let cartIcon;
-
-
-// ====== 功能函數 ======
-
-
-function renderProducts() {
-    if (!productList) {
-        console.error('Error: #product-list element not found in HTML. Cannot render products.');
-        return;
-    }
-
-    productList.innerHTML = '';
-    products.forEach(product => {
-        const isSpecialOffer = product.specialPrice < product.originalPrice;
-        const specialPricePrefix = isSpecialOffer ? '預購優惠價 ' : '';
-
-        // 【核心修改】判斷是否有圖片，然後生成對應的 HTML
-        const productImageHtml = product.image ?
-            `<div class="product-image-container"><img src="${product.image}" alt="${product.name}"></div>` :
-            `<div class="product-image-placeholder"><h3>${product.name}</h3><p>圖片待補 / 綜合口味示意</p></div>`;
- 
-       // 【新增】檢查是否有 ingredients 屬性，並生成對應的 HTML 行
-        const ingredientsHtml = product.ingredients ? 
-            `<p class="ingredients">主要成分：${product.ingredients}</p>` : '';
-
-        const productCard = document.createElement('div');
-        productCard.classList.add('product-card');
-        productCard.innerHTML = `
-            ${productImageHtml} <!-- 在這裡插入圖片或佔位符 -->
-            <div class="product-content"> <!-- 新增一個 div 包裹文字內容 -->
-            <h3>${product.name}</h3>
-            <p class="description">${product.description}</p>
-            ${ingredientsHtml} <!-- 在這裡插入成分說明 -->
-            <p class="price">
-                <span class="original-price">${isSpecialOffer ? '$' + product.originalPrice : ''}</span>
-                <span class="special-price">${specialPricePrefix}$${product.specialPrice}</span>
-            </p>
-            <div class="quantity-control">
-                <button data-id="${product.id}" data-action="decrease">-</button>
-                <input type="number" value="0" min="0" data-id="${product.id}" class="product-quantity-input">
-                <button data-id="${product.id}" data-action="increase">+</button>
-            </div>
-            <button class="btn primary-btn add-to-cart-btn" data-id="${product.id}">加入購物車</button>
-        `;
-        productList.appendChild(productCard);
-    });
-
-    addEventListenersToProducts();
-}
-
-
-function addEventListenersToProducts() {
-    document.querySelectorAll('.product-quantity-input').forEach(input => {
-        input.addEventListener('change', (e) => {
-            if (e.target.value < 0) e.target.value = 0; 
-        });
-    });
-
-
-    document.querySelectorAll('.quantity-control button').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const productId = e.target.dataset.id;
-            const input = document.querySelector(`.product-quantity-input[data-id="${productId}"]`);
-            let quantity = parseInt(input.value);
-            if (e.target.dataset.action === 'increase') {
-                quantity++;
-            } else if (e.target.dataset.action === 'decrease' && quantity > 0) {
-                quantity--;
+        // ====== 產品資料 (限量版) ======
+        const products = [
+            // 1. 九宮格綜合禮盒
+            {
+                type: 'single',
+                id: 'mix_9grid',
+                name: '金馬迎春・九宮格綜合禮盒',
+                originalPrice: 550, // 暫定價格，請修改
+                specialPrice: 520,  // 暫定價格，請修改
+                description: '限量50盒！經典蛋黃酥、綠豆椪與精選手工餅乾的完美組合，送禮大氣首選。',
+                image: 'https://rovihandmade.github.io/2026_lunar_new_year/gift_9grid.jpg', // 請確認檔名是否一致
+                ingredients: '烏豆沙蛋黃酥x1入、綠豆沙蛋黃酥x1入、紅豆麻吉酥x1入、招財貓原味餅乾x3入、檸檬糖霜餅乾x3入、巧克力鑽石餅乾x3入、桂圓手作餅乾x3入、義式蒜味掛霜腰果(60g)x1入、可可脆腰果(40g)x1入',
+                totalStock: 50,
+                remainingStock: 30
+            },
+            // 2. 奶油酥餅禮盒
+            {
+                type: 'single',
+                id: 'butter_cookie',
+                name: '經典奶油酥餅禮盒',
+                originalPrice: 320, // 暫定價格，請修改
+                specialPrice: 300,  // 暫定價格，請修改
+                description: '質感墨綠手提袋裝。濃郁奶油香氣，酥鬆口感入口即化，限量40盒。',
+                image: 'https://rovihandmade.github.io/2026_lunar_new_year/gift_butter.jpg', // 請確認檔名是否一致
+                ingredients: '奶油酥餅 x 8入',
+                totalStock: 40,
+                remainingStock: 30
+            },
+            // 3. 鳳梨酥系列 (10入)
+            {
+                type: 'group',
+                name: '旺來鳳梨酥禮盒 (10入)',
+                image: 'https://rovihandmade.github.io/2026_lunar_new_year/gift_pineapple.jpg', // 請確認檔名是否一致
+                description: '粉嫩禮盒包裝，內含10顆。皮酥餡香，經典原味與土鳳梨兩種風味任選。',
+                ingredients: '經典鳳梨酥/土鳳梨酥 x 10入',
+                totalStock: 50,
+                remainingStock: 30, // 兩款共用庫存顯示
+                variants: [
+                    {
+                        id: 'pineapple_classic',
+                        name: '經典鳳梨酥',
+                        originalPrice: 430, // 已更新價格
+                        specialPrice: 400   // 請確認優惠價
+                    },
+                    {
+                        id: 'pineapple_native',
+                        name: '土鳳梨酥 (微酸)',
+                        originalPrice: 550, // 已更新價格
+                        specialPrice: 520   // 請確認優惠價
+                    }
+                ]
+            },
+            // 4. 腰果禮盒
+            {
+                type: 'single',
+                id: 'cashew_box',
+                name: '雙饗腰果禮盒',
+                originalPrice: 330, // 暫定價格，請修改
+                specialPrice: 310,  // 暫定價格，請修改
+                description: '健康美味首選。嚴選腰果，低溫烘焙保留營養與酥脆口感。',
+                image: 'https://rovihandmade.github.io/2026_lunar_new_year/gift_cashew.jpg', // 請確認檔名是否一致
+                ingredients: '義式蒜味掛霜腰果(150g)/可可脆腰果(100g)',
+                totalStock: 50,
+                remainingStock: 39
             }
-            input.value = quantity;
-        });
-    });
+        ];
 
+        let cart = [];
 
-    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const productId = e.target.dataset.id;
-            const input = document.querySelector(`.product-quantity-input[data-id="${productId}"]`);
-            const quantity = parseInt(input.value);
-            if (quantity > 0) {
-                addToCart(productId, quantity);
-                input.value = 0; 
-            } else {
-                alert('請選擇欲加入的數量！');
-            }
-        });
-    });
-}
-
-
-function addToCart(productId, quantity) {
-    const existingItemIndex = cart.findIndex(item => item.productId === productId);
-    if (existingItemIndex > -1) {
-        cart[existingItemIndex].quantity += quantity;
-    } else {
-        cart.push({ productId, quantity });
-    }
-    updateCartDisplay();
-}
-
-
-function removeFromCart(productId) {
-    cart = cart.filter(item => item.productId !== productId);
-    updateCartDisplay();
-}
-
-
-function updateCartItemQuantity(productId, newQuantity) {
-    const item = cart.find(item => item.productId === productId);
-    if (item) {
-        item.quantity = Math.max(0, newQuantity); 
-        if (item.quantity === 0) {
-            removeFromCart(productId); 
-        } else {
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
             updateCartDisplay();
-        }
-    }
-}
+            setupEventListeners();
+        });
 
+        // 渲染主產品
+        function renderProducts() {
+            const container = document.getElementById('product-list');
+            container.innerHTML = '';
 
-function calculateCartTotal() {
-    let total = 0;
-    cart.forEach(item => {
-        const product = products.find(p => p.id === item.productId);
-        if (product) {
-            total += product.specialPrice * item.quantity;
-        }
-    });
-    return total;
-}
+            products.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
 
-
-function renderCartItems() {
-    if (!cartItemsDisplay) { 
-        console.error('Error: #cart-items-display element not found.');
-        return;
-    }
-    if (!cartSummarySection) { 
-        console.error('Error: #cart-summary-section element not found.');
-        return;
-    }
-
-
-    if (cart.length === 0) {
-        cartItemsDisplay.innerHTML = '<p>購物車是空的。</p>';
-        cartSummarySection.classList.add('hidden'); 
-        return;
-    }
-
-
-    cartItemsDisplay.innerHTML = '';
-    cart.forEach(item => {
-        const product = products.find(p => p.id === item.productId); 
-        if (product) {
-            const cartItemDiv = document.createElement('div');
-            cartItemDiv.classList.add('cart-item');
-            cartItemDiv.innerHTML = `
-                <div class="cart-item-info">
-                    <h4>${product.name}</h4>
-                    <span>${product.unit} @ $${product.specialPrice}</span>
-                </div>
-                <div class="cart-item-controls">
-                    <div class="quantity-control">
-                        <button data-id="${item.productId}" data-action="decrease-cart">-</button> 
-                        <input type="number" value="${item.quantity}" min="0" data-id="${item.productId}" class="cart-quantity-input"> 
-                        <button data-id="${item.productId}" data-action="increase-cart">+</button> 
+                // 庫存標籤
+                const stockBadge = `
+                    <div class="stock-badge">
+                        <i class="fas fa-fire"></i> 限量 ${p.totalStock} 盒｜剩餘 ${p.remainingStock} 盒
                     </div>
-                    <span class="item-subtotal">$${product.specialPrice * item.quantity}</span>
-                    <button class="remove-btn" data-id="${item.productId}"><i class="fas fa-trash"></i></button> 
-                </div>
-            `;
-            cartItemsDisplay.appendChild(cartItemDiv);
-        }
-    });
+                `;
 
+                // 圖片區
+                const imgHtml = p.image 
+                    ? `<div class="product-image-container"><img src="${p.image}" alt="${p.name}"></div>`
+                    : `<div class="product-image-placeholder"><p>${p.name}</p></div>`;
 
-    // 為購物車明細中的數量控制和移除按鈕添加事件監聽器
-    document.querySelectorAll('.cart-quantity-input').forEach(input => {
-        input.addEventListener('change', (e) => {
-            const productId = e.target.dataset.id;
-            updateCartItemQuantity(productId, parseInt(e.target.value));
-        });
-    });
+                let contentHtml = '';
 
+                if (p.type === 'group') {
+                    // --- 組合商品渲染邏輯 (這裡修改了顯示原價的語法) ---
+                    let variantsHtml = '';
+                    p.variants.forEach(v => {
+                        variantsHtml += `
+                            <div class="variant-item">
+                                <div class="variant-info">
+                                    <span class="variant-name">${v.name}</span>
+                                    <div class="variant-price-group">
+                                        <span class="variant-original-price">$${v.originalPrice}</span>
+                                        <span class="variant-special-price">$${v.specialPrice}</span>
+                                    </div>
+                                </div>
+                                <div class="quantity-control">
+                                    <div class="qty-btn-group">
+                                        <button data-id="${v.id}" data-action="decrease">-</button>
+                                        <input type="number" value="0" min="0" data-id="${v.id}" class="qty-input">
+                                        <button data-id="${v.id}" data-action="increase">+</button>
+                                    </div>
+                                    <button class="btn primary-btn add-to-cart-btn" style="width:auto; padding:5px 15px;" data-id="${v.id}">加入</button>
+                                </div>
+                            </div>
+                        `;
+                    });
 
-    document.querySelectorAll('.cart-item-controls button[data-action]').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const productId = e.target.dataset.id;
-            const input = document.querySelector(`.cart-quantity-input[data-id="${productId}"]`);
-            let quantity = parseInt(input.value);
-            if (e.target.dataset.action === 'increase-cart') {
-                quantity++;
-            } else if (e.target.dataset.action === 'decrease-cart' && quantity > 0) {
-                quantity--;
-            }
-            updateCartItemQuantity(productId, quantity);
-        });
-    });
+                    contentHtml = `
+                        <div class="product-content">
+                            <h3>${p.name}</h3>
+                            <p class="description">${p.description}</p>
+                            <p class="ingredients">內容：${p.ingredients}</p>
+                            <div class="variants-container">
+                                ${variantsHtml}
+                            </div>
+                        </div>
+                    `;
 
-
-    document.querySelectorAll('.remove-btn').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const productId = e.target.dataset.id;
-            removeFromCart(productId);
-        });
-    });
-}
-
-
-function updateCartDisplay() {
-    if (!cartCountSpan) { 
-        console.error('Error: #cart-count element not found.');
-        return;
-    }
-    if (!cartTotalAmountSpan) { 
-        console.error('Error: #cart-total-amount element not found.');
-        return;
-    }
-    
-    cartCountSpan.textContent = cart.reduce((sum, item) => sum + item.quantity, 0); 
-    cartTotalAmountSpan.textContent = `$${calculateCartTotal()}`;
-    renderCartItems();
-
-
-    if (cart.length > 0) {
-        cartSummarySection.classList.remove('hidden');
-    } else {
-        cartSummarySection.classList.add('hidden');
-    }
-}
-
-
-function clearCart() {
-    cart = [];
-    updateCartDisplay();
-    alert('購物車已清空！');
-}
-
-
-function generateGoogleFormUrl() {
-    if (cart.length === 0) {
-        alert('您的購物車是空的，請先選擇商品！');
-        return;
-    }
-
-    // 使用一個物件來儲存每個品項的最終數量，確保每個 entry.ID 只出現一次
-    const quantitiesMap = {};
-    
-    // 1. 初始化所有品項的數量為 0
-    for (const productId in PRODUCT_QUANTITY_ENTRY_IDS) {
-        const entryId = PRODUCT_QUANTITY_ENTRY_IDS[productId];
-        quantitiesMap[entryId] = 0; // 初始化為 0
-    }
-
-    // 2. 用購物車中的實際數量來更新這些值
-    cart.forEach(item => {
-        const entryId = PRODUCT_QUANTITY_ENTRY_IDS[item.productId];
-        if (entryId) {
-            quantitiesMap[entryId] = item.quantity; // 更新為實際選購數量
-        } else {
-            console.warn(`Warning: Missing entry ID for product ID: ${item.productId}`);
-        }
-    });
-
-    // 3. 從 quantitiesMap 構建 formUrlParams 字串
-    let formUrlParams = '';
-    for (const entryId in quantitiesMap) {
-        formUrlParams += `&entry.${entryId}=${quantitiesMap[entryId]}`;
-    }
-
-    const googleFormFinalUrl = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/viewform?usp=pp_url${formUrlParams}`;
-
-    console.log('生成的 Google 表單預填網址:', googleFormFinalUrl); // 重新啟用診斷
-    window.location.replace(googleFormFinalUrl); 
-}
-
-
-// ====== 事件監聽器 ======
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    try {
-        // 在 DOMContentLoaded 內部獲取所有 DOM 元素，確保它們已經存在
-        productList = document.getElementById('product-list');
-        cartCountSpan = document.getElementById('cart-count');
-        cartSummarySection = document.getElementById('cart-summary-section');
-        cartItemsDisplay = document.getElementById('cart-items-display');
-        cartTotalAmountSpan = document.getElementById('cart-total-amount');
-        proceedToFormBtn = document.getElementById('proceed-to-form-btn');
-        clearCartBtn = document.getElementById('clear-cart-btn');
-        cartIcon = document.querySelector('.cart-icon');
-
-
-        // 確保按鈕元素存在後再綁定事件
-        if (proceedToFormBtn) {
-            proceedToFormBtn.addEventListener('click', generateGoogleFormUrl);
-        } else {
-            console.error('Error: #proceed-to-form-btn not found. Cannot bind click event.');
-        }
-        if (clearCartBtn) {
-            clearCartBtn.addEventListener('click', clearCart);
-        } else {
-            console.error('Error: #clear-cart-btn not found. Cannot bind click event.');
-        }
-        if (cartIcon) {
-             cartIcon.addEventListener('click', () => {
-                if (cart.length > 0) {
-                    cartSummarySection.scrollIntoView({ behavior: 'smooth' });
                 } else {
-                    alert('您的購物車是空的，請先選擇商品！');
+                    // --- 單一商品渲染邏輯 ---
+                    contentHtml = `
+                        <div class="product-content">
+                            <h3>${p.name}</h3>
+                            <p class="description">${p.description}</p>
+                            <p class="ingredients">內容：${p.ingredients}</p>
+                            
+                            <div class="single-product-footer">
+                                <div class="price-area">
+                                    <span class="original-price">$${p.originalPrice}</span>
+                                    <span class="special-price">$${p.specialPrice}</span>
+                                </div>
+                                <div class="quantity-control">
+                                    <div class="qty-btn-group">
+                                        <button data-id="${p.id}" data-action="decrease">-</button>
+                                        <input type="number" value="0" min="0" data-id="${p.id}" class="qty-input">
+                                        <button data-id="${p.id}" data-action="increase">+</button>
+                                    </div>
+                                </div>
+                                <button class="btn primary-btn add-to-cart-btn" data-id="${p.id}">加入購物車</button>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                card.innerHTML = stockBadge + imgHtml + contentHtml;
+                container.appendChild(card);
+            });
+        }
+
+        // 事件綁定
+        function setupEventListeners() {
+            // 數量增減按鈕
+            document.addEventListener('click', (e) => {
+                if(e.target.dataset.action === 'increase') {
+                    const input = document.querySelector(`.qty-input[data-id="${e.target.dataset.id}"]`);
+                    input.value = parseInt(input.value) + 1;
+                }
+                if(e.target.dataset.action === 'decrease') {
+                    const input = document.querySelector(`.qty-input[data-id="${e.target.dataset.id}"]`);
+                    if(parseInt(input.value) > 0) input.value = parseInt(input.value) - 1;
+                }
+                // 加入購物車按鈕
+                if(e.target.classList.contains('add-to-cart-btn')) {
+                    const id = e.target.dataset.id;
+                    const input = document.querySelector(`.qty-input[data-id="${id}"]`);
+                    const qty = parseInt(input.value);
+                    if(qty > 0) {
+                        addToCart(id, qty);
+                        input.value = 0; // 重置
+                        alert('已加入購物車！');
+                    } else {
+                        alert('請選擇數量');
+                    }
                 }
             });
-        } else {
-            console.error('Error: .cart-icon not found. Cannot bind click event.');
+
+            // 購物車開關
+            document.querySelector('.cart-icon').addEventListener('click', toggleCart);
+            document.getElementById('close-cart-btn').addEventListener('click', toggleCart);
+            document.getElementById('clear-cart-btn').addEventListener('click', () => { cart = []; updateCartDisplay(); });
+            document.getElementById('proceed-to-form-btn').addEventListener('click', generateGoogleFormUrl);
         }
 
+        // 購物車邏輯
+        function addToCart(id, qty) {
+            const existing = cart.find(item => item.id === id);
+            if(existing) {
+                existing.quantity += qty;
+            } else {
+                let productInfo = null;
+                let price = 0;
+                
+                let p = products.find(p => p.id === id);
+                if(p) {
+                    productInfo = p;
+                    price = p.specialPrice;
+                } 
+                else {
+                    products.forEach(group => {
+                        if(group.type === 'group') {
+                            const v = group.variants.find(v => v.id === id);
+                            if(v) {
+                                productInfo = v;
+                                price = v.specialPrice;
+                            }
+                        }
+                    });
+                }
 
-        renderProducts();
-        updateCartDisplay(); 
-    } catch (e) {
-        console.error('Error during initial product rendering or cart display:', e);
-        alert('網頁載入發生錯誤，請稍後再試。錯誤訊息：' + e.message);
-    }
-});
+                if(productInfo) {
+                    cart.push({ id: id, name: productInfo.name, price: price, quantity: qty });
+                }
+            }
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const display = document.getElementById('cart-items-display');
+            const totalSpan = document.getElementById('cart-total-amount');
+            const countSpan = document.getElementById('cart-count');
+            
+            display.innerHTML = '';
+            let total = 0;
+            let count = 0;
+
+            if(cart.length === 0) {
+                display.innerHTML = '<p>購物車是空的。</p>';
+            } else {
+                cart.forEach(item => {
+                    total += item.price * item.quantity;
+                    count += item.quantity;
+                    
+                    const div = document.createElement('div');
+                    div.className = 'cart-item';
+                    div.innerHTML = `
+                        <div>
+                            <strong>${item.name}</strong><br>
+                            <small>$${item.price} x ${item.quantity}</small>
+                        </div>
+                        <div style="display:flex; align-items:center;">
+                            <span style="font-weight:bold; color:#C0392B;">$${item.price * item.quantity}</span>
+                            <button onclick="removeFromCart('${item.id}')" style="margin-left:10px; border:none; background:none; cursor:pointer;"><i class="fas fa-trash"></i></button>
+                        </div>
+                    `;
+                    display.appendChild(div);
+                });
+            }
+            totalSpan.innerText = '$' + total;
+            countSpan.innerText = count;
+        }
+
+        window.removeFromCart = function(id) {
+            cart = cart.filter(item => item.id !== id);
+            updateCartDisplay();
+        };
+
+        function toggleCart() {
+            const cartPanel = document.getElementById('cart-summary-section');
+            cartPanel.classList.toggle('active');
+        }
+
+        function generateGoogleFormUrl() {
+            if (cart.length === 0) { alert('購物車是空的'); return; }
+            
+            let params = '';
+            cart.forEach(item => {
+                const entryId = PRODUCT_QUANTITY_ENTRY_IDS[item.id];
+                if (entryId) {
+                    params += `&entry.${entryId}=${item.quantity}`;
+                }
+            });
+            
+            const url = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/viewform?usp=pp_url${params}`;
+            window.open(url, '_blank');
+        }
     </script>
 </body>
 </html>
-
-
-
