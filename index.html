@@ -560,17 +560,39 @@ nav a:hover {
 
 .social-links {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* 調整圖示之間的間距 */
 }
 
 .social-links a {
-    font-size: 2em;
-    color: #5a4b40;
-    margin: 0 15px;
-    transition: color 0.3s ease;
+    font-size: 2.5em; /* 稍微放大一點圖示 */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
 }
 
+/* 滑鼠移過去時會有微微浮起放大的效果 */
 .social-links a:hover {
-    color: #e6b268;
+    transform: translateY(-5px);
+    opacity: 0.8; 
+}
+
+/* LINE 經典綠色 */
+.social-links a.line-icon i {
+    color: #06C755; 
+}
+
+/* Facebook 經典藍色 */
+.social-links a.fb-icon i {
+    color: #1877F2; 
+}
+
+/* Instagram 經典漸層色 (使用文字遮罩技術) */
+.social-links a.ig-icon i {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* 確保漸層能正確套用在圖示上 */
 }
 
 /* Footer */
@@ -786,6 +808,35 @@ footer a:hover {
     padding: 0;
     line-height: 1.4;
 }
+
+
+/* =========================================
+   【新增】早鳥優惠大區塊專屬樣式 
+   ========================================= */
+.early-bird-block {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: #fff9f0; /* 溫暖的淺奶油橘底色 */
+    border: 2px dashed #e6b268; /* 暖金色虛線邊框，增加吸睛度 */
+    text-align: center; /* 文字置中 */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(230, 178, 104, 0.15); /* 淡淡的光暈陰影 */
+}
+
+.early-bird-block h3 {
+    border-bottom: none; /* 移除原本 info-block 預設的底線 */
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #d35400; /* 更有活力的深橘色 */
+}
+
+.early-bird-block .highlight-text {
+    color: #e65353; /* 強調紅 */
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 10px;
+}
         
     </style>
 </head>
@@ -835,20 +886,36 @@ footer a:hover {
             <p>主打4款手提禮盒，數量有限，將依照預購順位出貨（不挑款、隨機款式出貨）</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://i.postimg.cc/pTp0k0Sh/image.jpg" alt="手提禮盒款式1"> <!-- 請替換 -->
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/酥酥福福V1.png" alt="手提禮盒款式1"> <!-- 請替換 -->
                     <p>手提禮盒款式1</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.postimg.cc/KjT0h1xm/image.jpg" alt="手提禮盒款式2"> <!-- 請替換 -->
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/酥酥福福(橫式)V1.png" alt="手提禮盒款式2"> <!-- 請替換 -->
                     <p>手提禮盒款式2</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.postimg.cc/05KWwBmh/V1.png" alt="手提禮盒款式3"> <!-- 請替換 -->
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/蛋黃酥禮盒V1.png" alt="手提禮盒款式3"> <!-- 請替換 -->
                     <p>手提禮盒款式3</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.postimg.cc/nzg3W48d/image.jpgg" alt="手提禮盒款式4"> <!-- 請替換 -->
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/橘盒月兔V1.png" alt="手提禮盒款式4"> <!-- 請替換 -->
                     <p>手提禮盒款式4</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/紅盒月兔V1.png" alt="手提禮盒款式4"> <!-- 請替換 -->
+                    <p>手提禮盒款式5</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/紅盒透明窗V1.png" alt="手提禮盒款式4"> <!-- 請替換 -->
+                    <p>手提禮盒款式6</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/兔子白盒V1.png" alt="手提禮盒款式4"> <!-- 請替換 -->
+                    <p>手提禮盒款式7</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/綠框窗格V1.png" alt="手提禮盒款式4"> <!-- 請替換 -->
+                    <p>手提禮盒款式8</p>
                 </div>
                 <div class="gallery-item">
                     <img src="https://i.postimg.cc/MTx1gKV7/image.jpg" alt=" "> <!-- 請替換 -->
@@ -890,17 +957,21 @@ footer a:hover {
                 </p>
             </div>
 
+
+            <!-- 上方 1 大：早鳥優惠獨立區塊 -->
+            <div class="early-bird-block">
+                <h3>🌟 早鳥取貨優惠 🌟</h3>
+                <p>凡於 <strong>2026/09/11 (星期五)</strong> 前完成取貨或出貨</p>
+                <p class="highlight-text">每盒單價再減 10 元 !!</p>
+            </div>
+
+
             <div class="info-blocks">
                 <div class="info-block">
                     <h3>預購期間</h3>
                     <p>即日起至 2026/08/25 星期二 止</p>
                     <p>手工限量製作，敬請提早預購</p>
                     <p>請注意：預購截止日後，價格即恢復原價</p>
-                </div>
-            <div class="info-block">
-                    <h3>早鳥取貨優惠</h3>
-                    <p>於2026/09/11 星期五 前取貨/出貨</p>
-                    <p>每盒單價再減10元!!</p>
                 </div>
                 <div class="info-block">
                     <h3>付款方式</h3>
@@ -952,30 +1023,45 @@ footer a:hover {
                 <p> 常溫保存：一般室溫下可保存約 2週。但因中秋節前後氣溫偏高，建議於7天內食用完畢，以保持新鮮與最佳風味。</p>
                 <p> 冷藏／冷凍保存：可延長保存至 4週。食用前建議使用 烤箱或微波稍微加熱回烤，可恢復外皮酥脆口感，風味更佳。</p>
             </div>
+
             <div class="faq-item">
                 <h3>Q: 如何知道我的訂單是否成立？</h3>
                 <p>A:</p>
-                <p> 提交訂單後，我們將於24小時內發送訂單確認信至您的Email或LINE，內含詳細訂購內容及匯款資訊。請於期限內完成匯款，逾期將自動取消訂單，謝謝。</p>
+                <p> 提交訂單後，我們會盡速與您聯絡確認訂單內容，請留意 Email 或 Line 訊息，</p>
+                <p> 內含詳細訂購內容及匯款資訊，並請於期限內完成匯款，逾期將自動取消訂單，謝謝。</p>
             </div>
-        </section>
+
+            <div class="faq-item">
+                <h3>溫馨小提醒</h3>
+                <p>為了呈現最完美的層次口感，我們的酥皮類點心（如綠豆椪、蛋黃酥、奶油酥餅）外皮製作得相當輕薄酥鬆，</p>
+                <p>在運送的旅途中，可能會因為路途顛簸或靜電摩擦，導致少許表皮脫落或沾黏在包裝袋上，</p>
+                <p>這些「旅行的痕跡」雖然讓外觀稍微不完美，但絕對不會影響內餡的美味與品質，</p>
+                <p>請您放心享用這份用心製作的美味！</p>
+            </div>
 
         <section id="contact" class="section contact-section container">
             <h2>與我們聯繫</h2>
-            <p>若有任何疑問或特殊需求，歡迎隨時與我們聯繫！</p>
+            <p>若有任何疑問，歡迎私訊粉絲專頁！</p>
             <ul>
                 <li><i class="fas fa-envelope"></i> Email：rovihandmade@gmail.com</li>
                 <li><i class="fas fa-clock"></i> 營業時間：每日9:00AM-20:00PM</li>
             </ul>
             <div class="social-links">
-                <a href="https://www.facebook.com/share/1Fjos2Lw4h/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/rovihandmade?igsh=Nm1najZxd3Q3c3hn" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                <!-- LINE -->
+                <a href="https://line.me/ti/p/VN8SFJACt2" target="_blank" class="line-icon"><i class="fab fa-line"></i></a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1Fjos2Lw4h/?mibextid=wwXIfr" target="_blank" class="fb-icon"><i class="fab fa-facebook-square"></i></a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/rovihandmade?igsh=Nm1najZxd3Q3c3hn" target="_blank" class="ig-icon"><i class="fab fa-instagram-square"></i></a>
             </div>
+
+
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Rovi蘿薇手作烘培。保留所有權利。</p>
+            <p>&copy; 2026 Rovi蘿薇手作烘培 保留所有權利</p>
             <p><a href="#">隱私權政策</a> | <a href="#">服務條款</a></p>
         </div>
     </footer>
@@ -991,7 +1077,8 @@ const PRODUCT_QUANTITY_ENTRY_IDS = { // 您的品項數量欄位 ID
     'pure_mung_bean': '2072600674',
     'floss_mung_bean': '179437994',
     'mixed_mung_bean': '1204106198',
-    'mixed_all': '600143959' // 已修正為正確的 ID
+    'mixed_all': '600143959',
+    'butter_cookie_box':''
 };
 
 // 產品資料 (請根據您的實際品項和價格修改)
@@ -1408,5 +1495,4 @@ document.addEventListener('DOMContentLoaded', () => {
     </script>
 </body>
 </html>
-
 
