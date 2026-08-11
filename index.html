@@ -959,7 +959,6 @@ footer a:hover {
             <!-- 【新增】第 1 大：6入精裝禮盒 (左圖右文) -->
             <div class="premium-showcase">
                 <div class="premium-showcase-img">
-                    <!-- 記得把 src 替換成您上傳的「6入精緻禮盒.png」網址 -->
                     <img src="https://rovihandmade.github.io/2026_mooncake_order/6入精緻禮盒.png" alt="【限量精裝 6 入提盒】"> 
                 </div>
                 <div class="premium-showcase-text">
@@ -1170,11 +1169,33 @@ const PRODUCT_QUANTITY_ENTRY_IDS = { // 您的品項數量欄位 ID
     'floss_mung_bean': '179437994',
     'mixed_mung_bean': '1204106198',
     'mixed_all': '600143959',
-    'butter_cookie_box':'1865101837'
+    'butter_cookie_box':'1865101837',
+    'mixed_egg_yolk_new':'1420718553'
 };
 
 // 產品資料 (請根據您的實際品項和價格修改)
 const products = [
+
+    {
+        id: 'mixed_egg_yolk_new',
+        name: '綜合蛋黃酥精緻提盒',
+        originalPrice: 470,
+        specialPrice: 420,
+        description: '烏豆沙、綠豆沙蛋黃酥各3入，每顆單獨小方盒包裝，限量精裝6入提盒40盒。',
+        image: 'https://rovihandmade.github.io/2026_mooncake_order/6入精緻禮盒.png', 
+        ingredients: '烏豆沙/綠豆沙、蛋黃、麵粉、安佳無水奶油、鮮奶油、糖、黑芝麻/白芝麻 (每顆淨重 65g ± 3g)', 
+        unit: '盒'
+    },
+    {
+        id: 'butter_cookie_box',
+        name: '經典奶油酥餅禮盒',
+        originalPrice: 350,
+        specialPrice: 310,
+        description: '奶油酥餅8入，濃郁奶油香氣，酥鬆口感入口即化。質感墨綠手提袋裝限量20盒。',
+        image: 'https://rovihandmade.github.io/2026_mooncake_order/奶油酥餅禮盒.png',
+        ingredients: '麵粉、安佳無鹽奶油、糖、牛奶、麥芽糖 (淨重 65g ± 3g)', // 
+        unit: '盒'
+    },
     {
         id: 'uodousha',
         name: '烏豆沙蛋黃酥',
@@ -1212,7 +1233,7 @@ const products = [
         specialPrice: 370,
         description: '懷舊古早味，層層酥鬆餅皮，綠豆沙入口即化，選擇減糖配方，甜而不膩。',
         image: 'https://i.postimg.cc/CKpvrLsb/v5.png', // 【新增/修改】請替換
-        ingredients: '綠豆沙、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', // 【新增】主要成分
+        ingredients: '綠豆沙、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', 
         unit: '盒'
     },
     {
@@ -1222,7 +1243,7 @@ const products = [
         specialPrice: 400,
         description: '獨特鹹香，香酥肉鬆與細緻綠豆沙的巧妙結合，鹹甜交織，口感豐富令人回味。',
         image: 'https://i.postimg.cc/NM4PHqTm/image.png', // 【新增/修改】請替換
-        ingredients: '綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', // 【新增】主要成分
+        ingredients: '綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', 
         unit: '盒'
     },
     {
@@ -1233,29 +1254,20 @@ const products = [
         description: '純綠豆、肉鬆各3入，一次擁有兩種經典綠豆椪風味。',
         image: 'https://i.postimg.cc/4NnFm03H/image.jpg', // 【新增/修改】
 
-        ingredients: '綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', // 【新增】主要成分
+        ingredients: '綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、新鮮火龍果汁 (淨重 65g ± 3g)', 
         unit: '盒'
     },
     {
         id: 'mixed_all',
-        name: '綜合蛋黃酥+肉鬆綠豆椪',
+        name: '綜合蛋黃酥+肉鬆綠豆椪經典禮盒',
         originalPrice: 450,
         specialPrice: 400,
         description: '圓滿推薦！精選烏豆沙蛋黃酥、綠豆沙蛋黃酥及肉鬆綠豆椪各2入，一次滿足您的所有渴望。',
         image: 'https://i.postimg.cc/XqY1KHch/image.jpg', // 【新增/修改】
-        ingredients: '烏豆沙、綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、黑芝麻、白芝麻、新鮮火龍果汁 (淨重 65g ± 3g)', // 【新增】主要成分
-        unit: '盒'
-    },
-    {
-        id: 'butter_cookie_box',
-        name: '經典奶油酥餅禮盒',
-        originalPrice: 350,
-        specialPrice: 310,
-        description: '奶油酥餅8入，濃郁奶油香氣，酥鬆口感入口即化。質感墨綠手提袋裝限量20盒。',
-        image: 'https://rovihandmade.github.io/2026_mooncake_order/奶油酥餅禮盒.png', // 【新增/修改】
-        ingredients: '麵粉、安佳無鹽奶油、糖、牛奶、麥芽糖 (淨重 65g ± 3g)', // 【新增】主要成分
+        ingredients: '烏豆沙、綠豆沙、肉鬆、麵粉、安佳無水奶油、鮮奶油、糖、黑芝麻、白芝麻、新鮮火龍果汁 (淨重 65g ± 3g)', 
         unit: '盒'
     }
+
 ];
 
 // 購物車
