@@ -837,6 +837,78 @@ footer a:hover {
     font-weight: 900;
     margin-top: 10px;
 }
+
+
+/* =========================================
+   【新增】限量精裝禮盒 - 左圖右文展示區塊
+   ========================================= */
+.premium-showcase {
+    display: flex;
+    flex-direction: row; /* 電腦版橫向排列：左圖右文 */
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 50px; /* 與下方 8 宮格保持呼吸空間 */
+    overflow: hidden;
+}
+
+.premium-showcase-img {
+    flex: 1; /* 圖片佔一半空間 */
+    max-width: 50%;
+}
+
+.premium-showcase-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.premium-showcase-text {
+    flex: 1; /* 文字佔一半空間 */
+    padding: 40px;
+    text-align: left; /* 文字靠左對齊，閱讀最舒適 */
+}
+
+.premium-showcase-text h3 {
+    font-size: 1.6em;
+    color: #5a4b40;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e6b268;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.premium-showcase-text p {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.premium-showcase-text ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.premium-showcase-text li {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* 手機版自動變成上下堆疊 (上圖下文) */
+@media (max-width: 768px) {
+    .premium-showcase {
+        flex-direction: column;
+    }
+    .premium-showcase-img {
+        max-width: 100%;
+    }
+    .premium-showcase-text {
+        padding: 25px;
+    }
+}
         
     </style>
 </head>
@@ -882,62 +954,79 @@ footer a:hover {
 
         <!-- 相片集區塊 -->
         <section id="photo-gallery" class="section photo-gallery-section container">
-            <h2>2026年禮盒款式</h2>
-            <p>各種禮盒數量有限，經典禮盒隨機款式出貨</p>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://rovihandmade.github.io/2026_mooncake_order/酥酥福福V1.png" alt="經典手提禮盒款式1"> <!-- 請替換 -->
-                    <p>經典手提禮盒款式1</p>
+            <h2>2026年 質感中秋禮盒系列</h2>
+
+            <!-- 【新增】第 1 大：6入精裝禮盒 (左圖右文) -->
+            <div class="premium-showcase">
+                <div class="premium-showcase-img">
+                    <!-- 記得把 src 替換成您上傳的「6入精緻禮盒.png」網址 -->
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/6入精緻禮盒.png" alt="【限量精裝 6 入提盒】"> 
                 </div>
-                <div class="gallery-item">
-                    <img src="https://rovihandmade.github.io/2026_mooncake_order/酥酥福福(橫式)V1.png" alt="經典手提禮盒款式2"> <!-- 請替換 -->
-                    <p>經典手提禮盒款式2</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://rovihandmade.github.io/2026_mooncake_order/蛋黃酥禮盒V1.png" alt="經典手提禮盒款式3"> <!-- 請替換 -->
-                    <p>經典手提禮盒款式3</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://rovihandmade.github.io/2026_mooncake_order/橘盒月兔V1.png" alt="經典手提禮盒款式4"> <!-- 請替換 -->
-                    <p>經典手提禮盒款式4</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://rovihandmade.github.io/2026_mooncake_order/紅盒月兔V1.jpg" alt="經典手提禮盒款式5"> <!-- 請替換 -->
-                    <p>經典手提禮盒款式5</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://rovihandmade.github.io/2026_mooncake_order/紅盒透明窗V1.jpg" alt="經典手提禮盒款式6"> <!-- 請替換 -->
-                    <p>經典手提禮盒款式6</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://rovihandmade.github.io/2026_mooncake_order/兔子白盒V1.png" alt="經典手提禮盒款式7"> <!-- 請替換 -->
-                    <p>經典手提禮盒款式7</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://rovihandmade.github.io/2026_mooncake_order/綠框窗格V1.png" alt="經典手提禮盒款式8"> <!-- 請替換 -->
-                    <p>經典手提禮盒款式8</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/MTx1gKV7/image.jpg" alt=" "> <!-- 請替換 -->
-                <p>產品展示1</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/sxg7D6n1/image.jpg" alt=" "> <!-- 請替換 -->
-                <p>產品展示2</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/htkLb0G3/image.jpg" alt=" "> <!-- 請替換 -->
-                <p>產品展示3</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.postimg.cc/tJvP13fk/image.jpg" alt=" "> <!-- 請替換 -->
-                <p>產品展示4</p>
+                <div class="premium-showcase-text">
+                    <h3>✨年度主推｜【繁花映月】限量精裝 6 入提盒</h3>
+                    <p>拋開傳統包裝的厚重感，以溫柔的蜜桃粉橘為基調，將中秋的祝福化作精緻的精品提盒。</p>
+                    <ul>
+                        <li><strong>精品提把設計：</strong> 宛如法式優雅小包，送禮俐落且體面大方。</li>
+                        <li><strong>繁花玉兔燙金美學：</strong> 揉合現代柔美與東方古典氣韻。</li>
+                        <li><strong>獨立專屬小方盒：</strong> 內藏 6 入獨立小盒，完美封存手作鮮度，開箱驚喜連連。</li>
+                    </ul>
+                    <p style="color: #e65353; font-weight: bold; margin-top: 15px;">( 限量發售，售完為止 )</p>
                 </div>
             </div>
-            <a href="#products" class="btn primary-btn" style="margin-top: 40px;">前往選購中秋禮盒</a> <!-- 【新增】CTA -->
+
+
+            <!-- 【修改】第 8 小：經典手提禮盒 (盲盒相片牆) -->
+            <div style="margin-bottom: 30px; text-align: center;">
+                <h3 style="color: #5a4b40; font-size: 1.5em; margin-bottom: 10px;">🏮 經典手提禮盒系列</h3>
+                <p>為了增添佳節趣味，今年的經典手提系列我們準備了多款精美包裝！</p>
+                <p style="color: #e65353; font-weight: bold;">🎁 【驚喜盲盒，隨機出貨】此系列款式恕不開放指定挑款，讓我們為您送上未知的小驚喜吧！</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- 移除了 <p> 標籤，只保留純圖片，營造相片牆質感 -->
+                <!-- 請依序填入您 8 張盒子的圖片網址 -->
+                <div class="gallery-item"><img src="https://rovihandmade.github.io/2026_mooncake_order/酥酥福福V1.png" alt="經典手提款"></div>
+                <div class="gallery-item"><img src="https://rovihandmade.github.io/2026_mooncake_order/酥酥福福(橫式)V1.png" alt="經典手提款"></div>
+                <div class="gallery-item"><img src="https://rovihandmade.github.io/2026_mooncake_order/蛋黃酥禮盒V1.png" alt="經典手提款"></div>
+                <div class="gallery-item"><img src="https://rovihandmade.github.io/2026_mooncake_order/橘盒月兔V1.png" alt="經典手提款"></div>
+                <div class="gallery-item"><img src="https://rovihandmade.github.io/2026_mooncake_order/紅盒月兔V1.jpg" alt="經典手提款"></div>
+                <div class="gallery-item"><img src="https://rovihandmade.github.io/2026_mooncake_order/紅盒透明窗V1.jpg" alt="經典手提款"></div>
+                <div class="gallery-item"><img src="https://rovihandmade.github.io/2026_mooncake_order/兔子白盒V1.png" alt="經典手提款"></div>
+                <div class="gallery-item"><img src="https://rovihandmade.github.io/2026_mooncake_order/綠框窗格V1.png" alt="經典手提款"></div>
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             【新增】職人手作美味實拍
+             ========================================= -->
+        <section class="section container" style="padding-top: 20px; padding-bottom: 60px;">
+            <h3 style="text-align: center; color: #5a4b40; margin-bottom: 30px; font-size: 1.8em; letter-spacing: 2px;">✨ 匠心烘焙，純粹美味 ✨</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <div style="background-color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); aspect-ratio: 1 / 1; display: flex; justify-content: center; align-items: center; padding: 15px;">
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/烏豆沙蛋黃酥.jpg" alt="美味實拍" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="background-color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); aspect-ratio: 1 / 1; display: flex; justify-content: center; align-items: center; padding: 15px;">
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/綠豆沙蛋黃酥.jpg" alt="美味實拍" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="background-color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); aspect-ratio: 1 / 1; display: flex; justify-content: center; align-items: center; padding: 15px;">
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/純綠豆椪.jpg" alt="美味實拍" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+
+                <div style="background-color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); aspect-ratio: 1 / 1; display: flex; justify-content: center; align-items: center; padding: 15px;">
+                    <img src="https://rovihandmade.github.io/2026_mooncake_order/奶油酥餅禮盒.png" alt="美味實拍" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+            <a href="#products" class="btn primary-btn">前往選購中秋禮盒</a>
+            </div>
+
             <p style="font-size: 0.9em; color: #888; margin-top: 20px; text-align: center;">
                 * 溫馨提醒：商品圖片僅供參考。中秋禮盒皆為純手工製作，實際外觀與色澤請以出貨實物為準。
             </p>
+
         </section>
 
         <section id="order-info" class="section order-info-section container">
@@ -1163,7 +1252,7 @@ const products = [
         originalPrice: 350,
         specialPrice: 310,
         description: '奶油酥餅8入，濃郁奶油香氣，酥鬆口感入口即化。質感墨綠手提袋裝限量20盒。',
-        image: 'https://rovihandmade.github.io/2026_lunar_new_year/gift_butter.jpg', // 【新增/修改】
+        image: 'https://rovihandmade.github.io/2026_mooncake_order/奶油酥餅禮盒.png', // 【新增/修改】
         ingredients: '麵粉、安佳無鹽奶油、糖、牛奶、麥芽糖 (淨重 65g ± 3g)', // 【新增】主要成分
         unit: '盒'
     }
